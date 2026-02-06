@@ -1,0 +1,7 @@
+{
+  "name": "One More Bite",
+  "description": "An AI food buddy for Indian hostel students that offers non-judgmental, realistic micro-improvements for your meals. No nagging, just one small swap to make eating a little bit better.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
