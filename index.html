@@ -1,92 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>One More Bite</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <style>
-      :root {
-        --ios-bg: #FFFFFF;
-        --ios-accent: #FF5A1F;
-      }
-      body {
-        font-family: 'Outfit', sans-serif;
-        background-color: var(--ios-bg);
-        color: #1C1C1E;
-        -webkit-tap-highlight-color: transparent;
-        overflow-x: hidden;
-      }
-      .font-display {
-        font-family: 'Playfair Display', serif;
-      }
-      .minimal-shadow {
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
-      }
-      .inner-shadow {
-        box-shadow: inset 0 2px 4px rgba(0,0,0,0.06);
-      }
-      .no-scrollbar::-webkit-scrollbar {
-        display: none;
-      }
-      .safe-bottom {
-        padding-bottom: env(safe-area-inset-bottom);
-      }
-      @keyframes soft-fade-in {
-        from { opacity: 0; transform: translateY(15px); }
-        to { opacity: 1; transform: translateY(0); }
-      }
-      .animate-soft-in {
-        animation: soft-fade-in 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-      }
-      .blob {
-        position: absolute;
-        width: 400px;
-        height: 400px;
-        background: radial-gradient(circle, rgba(255, 90, 31, 0.08) 0%, rgba(255, 255, 255, 0) 70%);
-        border-radius: 50%;
-        filter: blur(40px);
-        z-index: -1;
-      }
-      .blob-2 {
-        background: radial-gradient(circle, rgba(16, 185, 129, 0.06) 0%, rgba(255, 255, 255, 0) 70%);
-        top: 20%;
-        right: -100px;
-      }
-      .blob-3 {
-        background: radial-gradient(circle, rgba(59, 130, 246, 0.05) 0%, rgba(255, 255, 255, 0) 70%);
-        bottom: 10%;
-        left: -100px;
-      }
-      .dot-pattern {
-        background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
-        background-size: 16px 16px;
-      }
-      .cta-gradient {
-        background: linear-gradient(135deg, #FF5A1F 0%, #FFB347 100%);
-      }
-    </style>
-    <script type="importmap">
-    {
-      "imports": {
-        "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-        "@google/genai": "https://esm.sh/@google/genai@^1.39.0",
-        "react/": "https://esm.sh/react@^19.2.4/",
-        "react": "https://esm.sh/react@^19.2.4"
-      }
-    }
-    </script>
-  <link rel="stylesheet" href="/index.css">
-</head>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
   <body>
-    <div class="blob"></div>
-    <div class="blob blob-2"></div>
-    <div class="blob blob-3"></div>
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+
+    <!-- Vite entry (DO NOT CHANGE) -->
+    <script type="module" src="/src/index.tsx"></script>
   </body>
 </html>
